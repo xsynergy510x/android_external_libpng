@@ -28,7 +28,7 @@ my_cflags_arm64 := -DPNG_ARM_NEON_OPT=2
 
 # BUG: http://llvm.org/PR19472 - SLP vectorization (on ARM at least) crashes
 # when we can't lower a vectorized bswap.
-my_cflags_arm += -fno-slp-vectorize
+# my_cflags_arm += -fno-slp-vectorize
 
 my_src_files_arm := \
 			arm/arm_init.c \
